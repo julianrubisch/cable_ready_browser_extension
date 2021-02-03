@@ -1,13 +1,10 @@
-import OptionsSync from 'webext-options-sync';
+import OptionsSync from "webext-options-sync";
 
 export default new OptionsSync({
 	defaults: {
-		colorRed: 244,
-		colorGreen: 67,
-		colorBlue: 54
+		overlay: true,
+		duration: 5000
 	},
-	migrations: [
-		OptionsSync.migrations.removeUnused
-	],
+	migrations: [OptionsSync.migrations.removeUnused],
 	logging: true
 });

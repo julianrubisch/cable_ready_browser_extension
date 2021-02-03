@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CableReady</title>
+
+    <style type="text/css">
+      body {
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji";
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+      label {
+        margin-right: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <form id="options-form">
+        <div>
+          <label for="overlay">Activate Overlay</label>
+          <input type="checkbox" name="overlay" id="overlay-checkbox" />
+        </div>
+        <div>
+          <label for="duration">Overlay Duration</label>
+          <input type="number" name="duration" id="overlay-duration" />
+        </div>
+      </form>
+    </p>
+
+    <script src="/browser-polyfill.min.js"></script>
+    <script src="panel.js"></script>
+  </body>
+</html>
